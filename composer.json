@@ -41,8 +41,7 @@
         "symfony/routing": "^6.4 || ^7.0"
     },
     "require-dev": {
-        "contao/manager-plugin": "^2.3.1",
-        "phpunit/phpunit": "^10.5 || ^11.0"
+        "contao/manager-plugin": "^2.3.1"
     },
     "conflict": {
         "contao/core": "*",
@@ -61,11 +60,6 @@
             "contao/languages/",
             "contao/templates/"
         ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Oveleon\\ContaoCompanyBundle\\Tests\\": "tests/"
-        }
     },
     "extra": {
         "branch-alias": {
