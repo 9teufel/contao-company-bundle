@@ -22,7 +22,7 @@ $manipulator = PaletteManipulator::create();
 // Add the legend and fields to the root palette of tl_page
 $manipulator
     ->addLegend('company_legend', 'chmod_legend', PaletteManipulator::POSITION_AFTER, true)
-    ->addField(['companyEnableSchemaOrg', 'companyLogo', 'companyName', 'companyStreet', 'companyPostal', 'companyCity', 'companyState', 'companyCountry', 'companyPhone', 'companyPhone2', 'companyFax', 'companyEmail', 'companyEmail2', 'companyInfo', 'companyInfo2', 'companySocialMedia'], 'company_legend', PaletteManipulator::POSITION_APPEND)
+    ->addField(['companyLogo', 'companyName', 'companyStreet', 'companyPostal', 'companyCity', 'companyState', 'companyCountry', 'companyPhone', 'companyPhone2', 'companyFax', 'companyEmail', 'companyEmail2', 'companyInfo', 'companyInfo2', 'companySocialMedia'], 'company_legend', PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('root', 'tl_page')
 ;
 
@@ -37,16 +37,6 @@ System::loadLanguageFile('tl_company');
 System::loadLanguageFile('tl_company_socials');
 
 // Add fields to tl_page
-$GLOBALS['TL_DCA']['tl_page']['fields']['companyEnableSchemaOrg'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_company']['companyEnableSchemaOrg'],
-    'exclude' => true,
-    'inputType' => 'checkbox',
-    'eval' => [
-        'tl_class' => 'clr',
-    ],
-    'sql' => "char(1) NOT NULL default ''",
-];
-
 $GLOBALS['TL_DCA']['tl_page']['fields']['companyLogo'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_company']['companyLogo'],
     'inputType' => 'fileTree',

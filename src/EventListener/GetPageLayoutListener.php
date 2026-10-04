@@ -52,10 +52,7 @@ class GetPageLayoutListener
             }
         }
 
-        if ($rootPage->companyEnableSchemaOrg)
-        {
-            $this->addSchemaOrgData($company, $rootPage);
-        }
+        $this->addSchemaOrgData($company, $rootPage);
     }
 
     private function addSchemaOrgData(Company $company, PageModel $rootPage): void

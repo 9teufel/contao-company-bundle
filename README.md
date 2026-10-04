@@ -102,9 +102,8 @@ Keep in mind that saving these will overwrite the modules and insert-tags for th
 
 ### Structured data (JSON-LD)
 
-Enable **Output company data as structured data** in the company details of the website root. If a company name is
-configured, the bundle then adds an `Organization` node to Contao's existing Schema.org graph. The node contains the
-website root URL and all available address, phone, fax and e-mail data.
+If a company name is configured, the bundle automatically adds an `Organization` node to Contao's existing
+Schema.org graph. The node contains the website root URL and all available address, phone, fax and e-mail data.
 The configured logo and social media profile URLs are included as `logo` and `sameAs` properties.
 
 Values configured on the website root override the global company settings in the same way as for the modules and
