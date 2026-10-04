@@ -4,6 +4,12 @@
       <trans-unit id="tl_company.company_legend">
         <source>Company details</source>
       </trans-unit>
+      <trans-unit id="tl_company.companyEnableSchemaOrg.0">
+        <source>Output company data as structured data</source>
+      </trans-unit>
+      <trans-unit id="tl_company.companyEnableSchemaOrg.1">
+        <source>Outputs the company data as a Schema.org Organization in the website's JSON-LD.</source>
+      </trans-unit>
       <trans-unit id="tl_company.companyLogo.0">
         <source>Logo</source>
       </trans-unit>

@@ -5,6 +5,14 @@
         <source>Company details</source>
         <target>Unternehmensdaten</target>
       </trans-unit>
+      <trans-unit id="tl_company.companyEnableSchemaOrg.0">
+        <source>Output company data as structured data</source>
+        <target>Unternehmensdaten als strukturierte Daten ausgeben</target>
+      </trans-unit>
+      <trans-unit id="tl_company.companyEnableSchemaOrg.1">
+        <source>Outputs the company data as a Schema.org Organization in the website's JSON-LD.</source>
+        <target>Gibt die Unternehmensdaten als Schema.org-Organization im JSON-LD der Website aus.</target>
+      </trans-unit>
       <trans-unit id="tl_company.companyLogo.0">
         <source>Logo</source>
         <target>Logo</target>
